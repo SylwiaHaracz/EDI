@@ -11,8 +11,6 @@ async function fetchData() {
         });
 
         const data = await response.json();
-
-        // Display data as before
         displayData(data);
 
 }
