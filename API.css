@@ -1,0 +1,19 @@
+#api_table{
+    text-align: center;
+    width: 98%;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    float: center;
+    border: 1px;
+}
+
+#api_table thead{
+    background-color:#735335;
+    color:#eae4d1;
+}
+
+#api_table tbody{
+    background-color: #eae4d1;
+    color: #735335;
+}
