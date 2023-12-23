@@ -1,0 +1,59 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    color:#735335;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the footer */
+  footer {
+    background-color: #735335;
+    color: #eae4d1;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .contact-info, .localization, .form {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .contact-info h3, .localization h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p, .localization p {
+    margin: 5px 0;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .application-form label {
+    margin-bottom: 5px;
+  }
+  
+  .application-form input[type="text"],
+  .application-form input[type="email"],
+  .application-form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .application-form input[type="submit"] {
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    border: none;
+  }
+  a {
+    color: #eae4d1;
+}
