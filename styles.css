@@ -50,4 +50,49 @@ body {
   .item-price {
     font-weight: bold;
   }
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+  .image-container > div {
+    text-align: center;
+    margin: 40px;
+  }
   
+  .image-container img {
+    width: 180px;
+    height: 160px;
+    margin-right: 30px;
+    margin-bottom: 50px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 220px;
+    text-align: center;
+  }
+  .button {
+    margin-top: 5px;
+    border-radius: 10px;
+    border-color: #735335;
+    background-color: #b48156;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 16px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.5s;
+    width: 150px;
+  }
+  .button:hover {
+    background-color: #8f7438;
+  }
+  .space {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+  .image-container .custom-height {
+    height: auto;
+  }
