@@ -17,3 +17,15 @@
     background-color: #eae4d1;
     color: #735335;
 }
+
+#doughnut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
