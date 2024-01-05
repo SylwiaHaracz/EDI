@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #735335;
+}
+.menu {
+    float: center;
+    background-color: #735335;
+    width: auto;
+    max-width: 100%;
+    height: 60px;
+    padding: 10px;
+  }
+.menub {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 10px;
+    background-color: #eae4d1;
+}
+.menub a {
+    text-decoration: none;
+    color:black ;
+    font-weight: bold;
+  }
+.design {
+    float: center;
+    width: auto;
+    text-align: center;
+    height: 250px;
+    background-color: #735335
+}
+.design img {
+    height: 200px;
+    float: right;
+    margin-top: 12px;
+    margin-right: 50px;
+}
+blockquote {
+    background: #eae4d1;
+    border-left: 8px solid #735335;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .15);
+    color: black;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 50px auto;
+    padding: 1.2em 30px 1.2em 75px;
+    position: relative;
+    vertical-align: super;
+    width: 60%;
+    z-index: 0;
+    overflow: hidden;
+    margin-top: 200px;
+  }
+  
+  blockquote::before {
+    color: #735335;
+    content: "\201C";
+    font-size: 9em;
+    left: 0;
+    position: absolute;
+    top: -35px;
+  }
+  
+  blockquote p::before {
+    color: #ddd;
+    content: "\201C";
+    font-size: 100em;
+    line-height: 0.65em;
+    right: .095em;
+    position: absolute;
+    z-index: -1;
+  }
+
+.cytat {
+    clear: both;
+    width: 100%;
+    height: 300px;
+    background-color:#735335;
+    float:center;
+}
+.about {
+    width: 100%;
+    background-color:#735335;
+    min-height: 100px;
+    clear: both;
+    text-align: center;
+}
+.ab {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  margin: 0 25px;
+  background-color: #eae4d1;
+  color: #735335;
+}
