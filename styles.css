@@ -98,7 +98,7 @@ body {
   }
 #check-mark {
   display: none;
-  color: green; /* Kolor znaczka zaznaczenia */
-  font-size: 24px; /* Rozmiar czcionki znaczka zaznaczenia */
-  margin-left: 10px; /* Odległość między przyciskiem a znaczkiem */
+  color: green;
+  font-size: 24px;
+  margin-left: 10px;
 }
