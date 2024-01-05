@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Shop Menu</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <section >
+    <div class="design">
+        <img src="img/logo.jpg">
+    </div>
+</section>
+<section class="menu">
+    <div class="menub" id="home">
+        <a href='#home'><span>Home</span></a> 
+        <a href='#baristas'><span>About us</span></a> 
+        <a href='#menu'><span>Menu</span></a>
+        <a href="#api_table"><span>API</span></a>
+        <a href="#footer"><span>Contact</span></a>
+    </div>
+</section>
+<section >
+    <div class="cytat">
+        <blockquote>
+            "Coffee, a refined symphony of aroma and warmth, invites a daily pause for contemplation. 
+            In each sip, discover the rich tapestry of roasted tales, a moment of solace in life's bustling cadence. 
+            It's more than a beverage; it's an art, a ritual that transforms the ordinary into the extraordinary."
+        </blockquote>
+    </div>
+    
+</section>
+<section class="about">
+    <div class="ab">
+        <h3>
+            Meet our fabulous four, the caffeine conjurers and espresso enchantresses who turn your daily grind 
+            into a daily delight! With aprons as vibrant as their personalities, these coffee mavens are more 
+            than just baristas - they're the architects of your morning joy.
+            Together, they form the ultimate brew-tiful quartet, 
+            ready to turn your coffee experience into a caffeinated comedy show. 
+            Get ready to be brewed away, one hilarious sip at a time</h3>
+    </div>
+     <!-- Slideshow header-->
+<h1 class = "baristas_header" id="baristas">Our Team</h1>
+<!-- Slideshow -->
+<div class="slideshow-container">
+
+    <!-- Obrazki -->
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/1.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/2.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="img/3.png" style="width:100%">
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="img/4.png" style="width:100%">
+        <div class="text"></div>
+      </div>
+  
+    <!-- Strzałki, &#10094; - oznacza znak strzałki -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- Kropki na dole -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+<!-- Funkcja zmiany slajdów -->
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Następny/poprzedni slajd
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Zmiana slajdu na konkretny
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+// Funkcja wyświetlająca slajdy za pomocą ich numeru
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</section>
+  <section class="menu" id="menu">
+    
+    <div class="category">
+      <h2>Cakes</h2>
+      <div class="item">
+        <div class="item-image">
+          <img src="img/cheese cake2.jpg">
+        </div>
+        <div class="item-info">
+          <h3>New York Style Cheesecake</h3>
+          <p>Our absolutely delicious New York style cheesecake is bound to make you happier.</p>
+        </div>
+        <div class="item-price">15 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/applepie.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Mouthwatering Apple Pie</h3>
+            <p>This applepie is so good you'll be willing to give up your diet</p>
+        </div>
+        <div class="item-price">17 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/carrot.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Best carrot cake you've ever eaten</h3>
+            <p>You must try this cake, but worry not you won't turn into rabbit (probably)</p>
+        </div>
+        <div class="item-price">15 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/chocolate_chip.jpg">    
+        </div>
+        <div class="item-info">
+            <h3>The crispiest chcocolate chip cookie</h3>
+            <p>It never ends on just one..</p>
+        </div>
+        <div class="item-price">5 zł(each)</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/brownie.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Extra chocolate brownie</h3>
+            <p>With carmel syroup it's excacly how heaven tastes like</p>
+        </div>
+        <div class="item-price">16,50 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/redvelvet.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Red Velvet Cake</h3>
+            <p>..or should we say heart cake?</p>
+        </div>
+        <div class="item-price">18 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/gingerbread.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Gingerbread Cookies</h3>
+            <p>happier than you</p>
+        </div>
+        <div class="item-price">5 zł(each)</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/vanilla.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Vanilla Cake</h3>
+            <p>Isn't it just the prettiest?</p>
+        </div>
+        <div class="item-price">18 zł</div>
+      </div>
+    </div>
+    
+    <div class="category">
+      <h2>Beverages</h2>
+      <div class="item">
+        <div class="item-image">
+          <img src="img/espresso.jpg" alt="Espresso">
+        </div>
+        <div class="item-info">
+          <h3>Espresso</h3>
+          <p>A strong shot of espresso for the coffee aficionados.</p>
+        </div>
+        <div class="item-price">10 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/latte.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Latte</h3>
+            <p>a very elegant classic</p>
+        </div>
+        <div class="item-price">12 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/capp.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Cappuccino</h3>
+            <p>Extra foamy</p>
+        </div>
+        <div class="item-price">12 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/americano.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Americano</h3>
+            <p>Iced or warm both ways charming</p>
+        </div>
+        <div class="item-price">10 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/flat.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Flat white</h3>
+            <p>A latte for students (with extra shot of espresso)</p>
+        </div>
+        <div class="item-price">12 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/seasonal.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Seasonal Coffee</h3>
+            <p>A snowman chilling in gingerbread latte</p>
+        </div>
+        <div class="item-price">15 zł</div>
+      </div>
+      <div class="item">
+        <div class="item-image">
+            <img src="img/tea.jpg">
+        </div>
+        <div class="item-info">
+            <h3>Tea</h3>
+            <p>black, green, fruity or with milk.. your pick</p>
+        </div>
+        <div class="item-price">6 zł</div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="menu">
+    <div class="category">
+      <h2 class="container">Make your own coffee!</h2>
+      <h3 class="space">Select your coffee blend:</h3>
+      <div class="image-container">
+        <div>
+          <img src="img/blendespresso.jpeg" alt="Main Image">
+          <p>Espresso blend - "Bold Brew Bliss"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/blendespressowhite.jpeg" alt="Main Image">
+          <p>Espresso white blend - "Creamy Espresso Charm"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/siestablend.jpeg">
+          <p>Siesta blend - "Laid-back Harmony"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/coldbrew.jpg">
+          <p>Cold brew - "Chill, Thrill & Sip"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+      </div>
+      <h3 class="space">Select your milk:</h3>
+      <div class="image-container">
+        <div>
+          <img src="img/cowmilk.jpg">
+          <p>Cow milk - "Classic Creaminess"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/almondmilk.jpg">
+          <p>Almond milk - "Nutty Elegance"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/oatmilk.jpg">
+          <p>Oat milk - "Oaty Velvet"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/soymilk.jpg">
+          <p>Soy milk - "Bean Silk"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+      </div>
+      <h3 class="space">Select your syrup:</h3>
+      <div class="image-container">
+        <div>
+          <img src="img/almond.jpg" class="custom-height">
+          <p>Almond - "Nutty Sweetness"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/amaretto.jpg" class="custom-height">
+          <p>Amaretto - "Almond Joy"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/caramel.jpg" class="custom-height">
+          <p>Caramel - "Drizzle Dance"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+        </div>
+        <div>
+          <img src="img/apple.jpg" class="custom-height">
+          <p>Apple - "Orchard Infusion"</p>
+          <button class="button" onclick="showCheckMark(this)">Add</button>
+          <span id="check-mark">&#10004;</span>
+     
+          <div class="container">
+            <button class="button2" onclick="done_button(this)">Done!</button>
+            <p id="hidden_text" style="display: none;">Great choice! Your personalized coffee will cost 15 zł. Enjoy!</p>
+          </div>
+      
+        </div>
+        
+      </div>
+  
+   
+      <table id="api_table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Order</th>
+                <th>Rating</th>
+                <th>Order price</th>
+                <th>Order date</th>
+                <th>Payment method</th>
+                <th>Is a regular client?</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    
+    <script src="API.js"></script>
+    <hr>
+    <div id="doughnut">
+      <canvas id="doughnut_chart" width="500" height="500"></canvas>
+    </div>
+    <hr>
+    <div id="bar">
+      <canvas id="bar_chart" height="500"></canvas>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content" id="footer">
+      <div class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Email: ustalimy@gmail.com</p>
+        <p>Phone: 12345678</p>
+        <p>Address: Rakowicka 27</p>
+      </div>
+      <div class="localization">
+        <h3>Localization</h3>
+        <p>Town: Kraków</p>
+        <p>Adress:Rakowicka 27</p>
+        <a href="https://maps.app.goo.gl/HJcqfcLdnJiwLpjm6">View on Google Maps</a>
+      </div>
+      <div class="form">
+        <h3>Join Us</h3>
+        <form action="#" method="post" id="myForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          <input type="submit" value="Submit">
+      </form>
+      <div id="result"></div>
+      
+      <script>
+          document.getElementById('myForm').addEventListener('submit', function(event) {
+              event.preventDefault(); 
+              
+              
+              if (checkFormFilled()) {
+                  alert('We will contact you shortly!');
+              } else {
+                  alert('Please fill in all fields.');
+              }
+          });
+      
+          function checkFormFilled() {
+              var nameValue = document.getElementById('name').value;
+              var emailValue = document.getElementById('email').value;
+      
+              
+              if (nameValue !== '' && emailValue !== '') {
+                  return true;
+              } else {
+                  return false;
+              }
+          }
+      </script>
+      
+  </footer>
+
+</body>
+</html>

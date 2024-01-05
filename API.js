@@ -102,3 +102,21 @@ function create_bar_chart(data) {
         }
     });
 }
+function showCheckMark(button) {
+    var checkMark = button.nextElementSibling;
+  
+    if (checkMark.style.display === "none") {
+        checkMark.style.display = "inline";
+    } else {
+        checkMark.style.display = "none";
+    }
+  }
+  function done_button(done){
+    const hidden = document.getElementById("hidden_text")
+    if (hidden.style.display === 'none' || hidden.style.display === '') {
+      hidden.style.display = 'block';
+    } 
+    else {
+      hidden.style.display = 'none';
+  }
+  }
