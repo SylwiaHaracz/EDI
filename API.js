@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', fetchData);
 
 async function fetchData() {
-    const apiKey = 'ea458540';'https://my.api.mockaroo.com/customers.json'
-    const url = 'https://my.api.mockaroo.com/customers.json';
+    const apiKey = 'ec801480';
+    const url = 'https://my.api.mockaroo.com/project_data.json';
 
         const response = await fetch(url, {
             headers: {

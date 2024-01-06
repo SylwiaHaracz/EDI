@@ -7,20 +7,22 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <section >
-    <div class="design">
-        <img src="img/logo.jpg">
-    </div>
-</section>
-<section class="menu">
+
+<section class="home-menu">
     <div class="menub" id="home">
         <a href='#home'><span>Home</span></a> 
         <a href='#baristas'><span>About us</span></a> 
         <a href='#menu'><span>Menu</span></a>
-        <a href="#api_table"><span>API</span></a>
+        <a href="#api"><span>Our Clients</span></a>
         <a href="#footer"><span>Contact</span></a>
     </div>
 </section>
+<section >
+  <div class="design">
+      <img src="img/logo.jpg">
+  </div>
+</section>
+
 <section >
     <div class="cytat">
         <blockquote>
@@ -32,17 +34,20 @@
     
 </section>
 <section class="about">
-    <div class="ab">
-        <h3>
-            Meet our fabulous four, the caffeine conjurers and espresso enchantresses who turn your daily grind 
-            into a daily delight! With aprons as vibrant as their personalities, these coffee mavens are more 
-            than just baristas - they're the architects of your morning joy.
-            Together, they form the ultimate brew-tiful quartet, 
-            ready to turn your coffee experience into a caffeinated comedy show. 
-            Get ready to be brewed away, one hilarious sip at a time</h3>
-    </div>
      <!-- Slideshow header-->
 <h1 class = "baristas_header" id="baristas">Our Team</h1>
+<div class="ab">
+  <h3>
+      Meet our fabulous four, the caffeine conjurers and espresso enchantresses who turn your daily grind 
+      into a daily delight! With aprons as vibrant as their personalities, these coffee mavens are more 
+      than just baristas - they're the architects of your morning joy.
+      Together, they form the ultimate brew-tiful quartet, 
+      ready to turn your coffee experience into a caffeinated comedy show. 
+      Get ready to be brewed away, one hilarious sip at a time</h3>
+</div>
+<div class="space">
+  <p> </p>
+</div>
 <!-- Slideshow -->
 <div class="slideshow-container">
 
@@ -118,9 +123,15 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+
+<div class="space">
+  <p> </p>
+</div>
+
 </section>
-  <section class="menu" id="menu">
-    
+<h1 class="header" id="menu">Menu</h1>
+  <section class="menu">
+   
     <div class="category">
       <h2>Cakes</h2>
       <div class="item">
@@ -171,7 +182,7 @@ function showSlides(n) {
             <h3>Extra chocolate brownie</h3>
             <p>With carmel syroup it's excacly how heaven tastes like</p>
         </div>
-        <div class="item-price">16,50 zł</div>
+        <div class="item-price">16 zł</div>
       </div>
       <div class="item">
         <div class="item-image">
@@ -282,7 +293,7 @@ function showSlides(n) {
   
   <section class="menu">
     <div class="category">
-      <h2 class="container">Make your own coffee!</h2>
+      <h2 class="coffee">Make your own coffee!</h2>
       <h3 class="space">Select your coffee blend:</h3>
       <div class="image-container">
         <div>
@@ -362,17 +373,20 @@ function showSlides(n) {
           <p>Apple - "Orchard Infusion"</p>
           <button class="button" onclick="showCheckMark(this)">Add</button>
           <span id="check-mark">&#10004;</span>
-     
-          <div class="container">
-            <button class="button2" onclick="done_button(this)">Done!</button>
-            <p id="hidden_text" style="display: none;">Great choice! Your personalized coffee will cost 15 zł. Enjoy!</p>
-          </div>
-      
         </div>
-        
       </div>
+      <div class="container">
+        <button class="button2" onclick="done_button(this)">Done!</button>
+        <p id="hidden_text" style="display: none;">Great choice! Your coffee costs 15 zł. Enjoy!</p>
+      </div>
+    </section>
   
-   
+    <div class="space">
+      <p> </p>
+    </div>
+<section>
+  <h1 class="header" id="api">Client feedback</h1>
+  <section class="api">
       <table id="api_table">
         <thead>
             <tr>
@@ -402,19 +416,21 @@ function showSlides(n) {
     <div id="bar">
       <canvas id="bar_chart" height="500"></canvas>
     </div>
+  </section> 
   </section>
+  
   <footer>
     <div class="footer-content" id="footer">
       <div class="contact-info">
         <h3>Contact Us</h3>
-        <p>Email: ustalimy@gmail.com</p>
+        <p>Email: coffee_shop_krakow@gmail.com</p>
         <p>Phone: 12345678</p>
         <p>Address: Rakowicka 27</p>
       </div>
       <div class="localization">
         <h3>Localization</h3>
         <p>Town: Kraków</p>
-        <p>Adress:Rakowicka 27</p>
+        <p>Adress: Rakowicka 27</p>
         <a href="https://maps.app.goo.gl/HJcqfcLdnJiwLpjm6">View on Google Maps</a>
       </div>
       <div class="form">

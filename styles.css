@@ -154,6 +154,18 @@ body {
   a {
     color: #eae4d1;
 }
+
+.api {
+  flex: 1;
+  margin-left: 30px;
+  margin-right: 30px;
+  background-color: #eae4d1;
+  padding:20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 #api_table{
   text-align: center;
   width: 98%;
@@ -162,6 +174,7 @@ body {
   margin: 10px;
   float: center;
   border: 1px;
+  border-color: #735335;
 }
 
 #api_table thead{
@@ -198,7 +211,7 @@ body {
 .slideshow-container {
   max-width: 700px;
   position: relative;
-  margin: auto;
+  margin:auto;
 }
 
 /* Strzałki */
@@ -275,22 +288,12 @@ body {
   to {opacity: 1}
 }
 body, html {
-  margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
   background-color: #735335;
 }
 
-.wybor {
-  float: center;
-  background-color: #735335;
-  width: auto;
-  max-width: 100%;
-  height: 60px;
-  padding: 10px;
-}
 .menub {
-  margin-top: 20px;
+  margin: 30px 10px 10px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -298,7 +301,6 @@ body, html {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
-  margin: 0 10px;
   background-color: #eae4d1;
 }
 .menub a {
@@ -307,14 +309,12 @@ body, html {
   font-weight: bold;
 }
 .design {
-  float: center;
   width: auto;
-  text-align: center;
-  height: 250px;
+  height: 350px;
   background-color: #735335
 }
 .design img {
-  height: 200px;
+  height: 300px;
   float: right;
   margin-top: 12px;
   margin-right: 50px;
@@ -328,14 +328,13 @@ blockquote {
   font-style: italic;
   font-weight: 300;
   line-height: 1.6;
-  margin: 50px auto;
+  margin: auto;
   padding: 1.2em 30px 1.2em 75px;
   position: relative;
   vertical-align: super;
   width: 60%;
   z-index: 0;
   overflow: hidden;
-  margin-top: 200px;
 }
 
 blockquote::before {
@@ -362,7 +361,6 @@ blockquote p::before {
   width: 100%;
   height: 300px;
   background-color:#735335;
-  float:center;
 }
 .about {
   width: 100%;
@@ -373,6 +371,7 @@ blockquote p::before {
 }
 .ab {
 margin-top: 20px;
+margin-bottom: 20px;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -385,7 +384,6 @@ background-color: #eae4d1;
 color: #735335;
 }
 .button2 {
-  margin-top: 5px;
   border-radius: 10px;
   border-color: #735335;
   background-color: #b48156;
@@ -394,14 +392,33 @@ color: #735335;
   font-size: 15px;
   padding: 16px;
   cursor: pointer;
-  
+  clear:both;
   transition: all 0.5s;
   width: 150px;
-
+  margin: auto;
 }
-.container {
+
+.button2:hover{
+    background-color: #8f7438;
+}
+#hidden_text{
+  margin-top: -40px;
+}
+
+.coffee {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top:20px;
+  margin-bottom: 50px;
  
+}
+#check-mark{
+  display: none;
+}
+.header{
+  color:#eae4d1;
+  font-size: 70px;
+  text-align: center;
+  margin: 20px;
 }
